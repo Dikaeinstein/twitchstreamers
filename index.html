@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Twitch Streamers</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="public/css/normalize.css" rel="stylesheet" />
+        <link href="public/css/milligram.min.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">       
+        <link href="public/css/main.css" rel="stylesheet" />
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page
+        via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/
+html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/
+respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <main>
+            <header class="banner">
+                <h1 class="title container">Twitch Streamers</h1>
+            </header>
+            <div class="container status clearfix">
+                <label id="all" class="float-left"><input type="radio" name="status" value="all" checked/><span class="label-inline">All Streamers</span></label>
+                <label id="online" class="float-left"><input type="radio" name="status" value="online" /><span class="label-inline">Online</span></label>
+                <label id="offline" class="float-left"><input type="radio" name="status" value="offline" /><span class="label-inline">Offline</span></label>
+            </div>
+            <div class="container" id="display"></div>
+        </main>
+        <script src="public/js/jquery-3.2.1.min.js"></script>
+        <script src="public/js/main.js"></script>
+    </body>
+</html>

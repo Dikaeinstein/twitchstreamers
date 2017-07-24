@@ -1,0 +1,115 @@
+.banner {
+    display: block;
+    height: 5.2rem;
+    max-width: 100%;
+    width: 100%;
+    background: rgb(244, 245, 246);
+    border-bottom: 0.1rem solid rgb(209, 209, 209);
+}
+.banner .title {
+    font-size: 2.0rem;
+    font-family: "Gotham Rounded A", "Gotham Rounded B", "Helvetica Neue", Arial, sans-serif;
+    font-weight: bold;
+    line-height: 5.2rem;
+    padding: 0px;
+    text-decoration: none;
+    text-align: center
+}
+
+.status {
+    font-size: 1.6rem;
+    padding: 1.5rem;
+}
+.status > label {
+    margin-right: 0.5rem;
+}
+
+.streamer {
+    border: 0.2rem solid #606c76;
+    padding: 0.5rem;
+}
+.streamer .name {
+    font-weight: bold;
+
+}
+.streamer img {
+    border-radius: 50%;
+
+}
+.streamer a {
+    color: #606c76;
+    text-transform: capitalize;
+}
+.streamer a:hover {
+    color: #9b4dca;
+    text-decoration: underline;
+}
+.streamer .streaming {
+    display: none;
+}
+.streamer:after {
+    content: "streaming";
+    display: inline;
+    font-style: italic;
+}
+
+@media (min-width: 640px) {
+    .banner {
+        display: block;
+        height: 5.2rem;
+        max-width: 100%;
+        width: 100%;
+        background: rgb(244, 245, 246);
+        border-bottom: 0.1rem solid rgb(209, 209, 209);
+    }
+
+    .banner .title {
+        font-size: 2.0rem;
+        font-family: "Gotham Rounded A", "Gotham Rounded B", "Helvetica Neue", Arial, sans-serif;
+        font-weight: bold;
+        line-height: 5.2rem;
+        padding: 0px;
+        text-decoration: none;
+        text-align: center
+    }
+
+    .container {
+        max-width: 80rem;
+    }
+    .status {
+        font-size: 1.6rem;
+        padding: 1.5rem;
+    }
+
+    .streamer {
+        border: 0.2rem solid #606c76;
+        padding: 0.5rem;
+    }
+    .streamer .name {
+        padding: 2.0rem;
+        font-size: 2.0rem;
+        font-weight: bold;
+    }
+    .streamer img {
+        border-radius: 50%;
+        padding-top: 0.6rem;
+    }
+    .streamer a {
+        color: #606c76;
+        text-transform: capitalize;
+    }
+    .streamer a:hover {
+        color: #9b4dca;
+        text-decoration: underline;
+    }
+    .streamer .streaming {
+        display: block;
+        padding: 1.0rem;
+        font-style: italic;
+    }
+    .streamer:after {
+        content: "";
+    }
+}
+
+
